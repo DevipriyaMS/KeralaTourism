@@ -1,0 +1,57 @@
+<div class="d-flex justify-content-center align-items-center bgcolor" style="background-image: url('images/kathakali.jpg');">
+    <div class="card" style="width: 400px;">
+        <h3 class="card-title text-center">Welcome..!</h3>
+        <div class="card-body">
+            <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" formControlName="name" placeholder="Name">
+                    <div *ngIf="signupForm.get('name')?.invalid && signupForm.get('name')?.touched" class="text-danger">
+                        <div *ngIf="signupForm.get('name')?.errors?.['required']">Name is
+                            required.</div>
+                        <div *ngIf="signupForm.get('name')?.errors?.['minLength']">Require atleast 3 characters</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" formControlName="dob" style="color: rgb(72, 72, 72);">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" formControlName="email" placeholder="Email">
+                    <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched" class="text-danger">
+                        <div *ngIf="signupForm.get('email')?.errors?.['required']">This field is
+                            required.</div>
+                        <div *ngIf="signupForm.get('email')?.errors?.['email']">Please enter a
+                            valid email.</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" formControlName="password"
+                        placeholder="Password">
+                    <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched"
+                        class="text-danger">
+                        <div *ngIf="signupForm.get('password')?.errors?.['required']">Password is required</div>
+                        <div *ngIf="signupForm.get('password')?.errors?.['minLength']">Password should be atleast 8
+                            characters long</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword"
+                        placeholder="Confirm Password">
+                    <div *ngIf="signupForm.get('confirmPassword')?.invalid && signupForm.get('confirmPassword')?.touched"
+                        class="text-danger">
+                        <div *ngIf="signupForm.get('confirmPassword')?.errors?.['required']">This field is required</div>
+                        <div *ngIf="signupForm.get('confirmPassword')?.errors?.['minLength']">Same as Password</div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" [disabled]="signupForm.invalid">Sign Up</button>
+            </form>
+            <div class="text-center" id="signin">
+                <a><p (click)="onSignupClick()">Already done? Sign In</p></a>
+              </div>
+        </div>
+    </div>
+</div>

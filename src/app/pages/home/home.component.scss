@@ -1,0 +1,71 @@
+.home-container {
+    position: relative;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+.home-container img {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Place the image behind the overlay content */
+}
+
+.overlay {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+}
+
+// .contentcontainer{
+//     background: rgba(0, 0, 0, 0.5);
+//     width: 100%;
+//     height: 100%;
+// }
+
+.content {
+    height: auto;
+    width: 35%;
+    background: #bbbbbbda;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 600ms ease-out;
+}
+
+.content:hover{
+    transform: scale(1.1);
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: black;
+}
+
+#tagline:hover{
+    color: orange;
+    cursor: pointer;
+}
+#explore{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+#explore:hover{
+    color: orange;
+}

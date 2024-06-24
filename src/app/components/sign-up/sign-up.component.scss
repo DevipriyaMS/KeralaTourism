@@ -1,0 +1,59 @@
+.bgcolor{
+    // background-image:url("https://i.pinimg.com/originals/71/ae/24/71ae245be058ec3d060e9fd6aeeaed3b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card {
+    background-color: #bbbbbbda;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 6px;
+    transition: transform 600ms ease-out;
+}
+.card:hover{
+    transform: scale(0.9);
+}
+.card-title{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+label{
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.form-control {
+    border: none;
+    color: #ffffff;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.btn-primary {
+    background-color:white;
+    color: #1f1e1e;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn-primary:hover{
+    background-color:  rgba(87, 95, 87, 0.402);
+}
+.form-control:hover{
+    background-color: rgba(87, 95, 87, 0.402);
+}
+#signin{
+    text-decoration: none;
+    color: rgb(4, 26, 4);
+    align-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+#signin:hover{
+    color: rgb(109, 73, 7);
+    font-weight: bold;
+}

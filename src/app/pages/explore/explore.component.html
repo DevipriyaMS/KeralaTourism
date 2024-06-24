@@ -1,0 +1,39 @@
+<div class="text-center"><h1 class="title">Top Attractions</h1></div>
+<div id="cardCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- <div class="row"> -->
+      @for (item of food;track item.id) {
+      <!-- <div class="col-md-4"> -->
+      <div class="card">
+        <img [src]="item.imagesrc" class="card-img-top" alt="Image 1">
+        <div class="card-body">
+          <h5 class="card-title">{{item.title}}</h5>
+          <p class="card-text">{{item.category}}</p>
+        </div>
+      </div>
+      <!-- </div> -->
+      }
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+<div id="cardCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- <div class="row"> -->
+      @for (item of artforms;track item.id) {
+      <!-- <div class="col-md-4"> -->
+      <div class="card">
+        <img [src]="item.imagesrc" class="card-img-top" alt="Image 1">
+        <div class="card-body">
+          <h5 class="card-title">{{item.title}}</h5>
+          <p class="card-text">{{item.category}}</p>
+        </div>
+      </div>
+      <!-- </div> -->
+      }
+      <!-- </div> -->
+    </div>
+  </div>
+</div>

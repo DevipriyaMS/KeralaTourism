@@ -1,0 +1,125 @@
+.home-container {
+    position: relative;
+}
+.img-fluid{
+    height: 100vh;
+}
+.overlay {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.564);
+    border-radius: 10px;
+
+}
+
+.content h1 {
+    font-size: 9vw;
+    color: white;
+}
+
+.firstcontent {
+    background: rgba(44, 43, 43, 0.539);
+    width: 65%;
+    height: 90vh;
+    color: rgb(255, 255, 255);
+    font-size: 1.6vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.firstcontent h2 {
+    font-weight: bold;
+    font-size: 5vw;
+    margin-bottom: 3%;
+}
+
+.aboutcity {
+    background: fixed;
+    margin: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.carousel-item .card {
+    flex: 0 0 440px;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    height: 80vh;
+    width: 50vw;
+    transition: transform 600ms ease-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.carousel-item .card:hover {
+    transform: scale(1.1);
+}
+
+.carousel-item {
+    // margin-bottom: 6%;
+    margin-top: 2%;
+    display: flex;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    padding: 3%;
+    height: 50vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: black;
+    border-radius: 50%;
+    width: 5%;
+    height: 8vh;
+    top: 50%;
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.card-text {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.carousel-inner {
+    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.carousel-inner::-webkit-scrollbar {
+    width: 8px;
+    /* Width of the scrollbar */
+}
+
+.carousel-inner::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    /* Track color */
+}
+
+.carousel-inner::-webkit-scrollbar-thumb {
+    background-color: #1b1b1b;
+    /* Thumb color */
+    border-radius: 8px;
+}

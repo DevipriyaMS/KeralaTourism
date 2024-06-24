@@ -1,0 +1,22 @@
+<div class="container mt-3">
+    <div class="row">
+        @for (item of data;track item.id){
+        <div class="col-4">
+            <a [routerLink]="['/districtlist',item.title]" style="text-decoration: none;">
+                <div class="card">
+                    <!-- <img class="card img-top m-3 mb-0" src="images/kadamakkudy.jpg" alt="image"> -->
+                    <!-- <img class="card img-top" [src]="imageDetails.src" [alt]="imageDetails.alt"/> -->
+                    <img class="card img-top" [src]="item.imagesrc" />
+                    <div class="m-3">
+                        <div id="title" [routerLink]="['/districtlist',item.title]">{{item.title}}</div>
+                        <div id="description">{{item.description}}</div>
+                        <a id="more">See more..</a>
+                        <!-- <div style="font-weight: bold;">{{item.title}}</div> -->
+                        <!-- <div>{{item.description}}</div> -->
+                    </div>
+                </div>
+            </a>
+        </div>
+        }
+    </div>
+</div>
